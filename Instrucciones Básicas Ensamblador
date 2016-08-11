@@ -1,0 +1,82 @@
+******; Fragmentos código en Ensamblador******
+; /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+; Esta función limpia la pantalla haciendo un recorrido por toda la pantalla, 
+; el fondo de la pantalla se define por bh los color 71h que es fondo blanco(7), 
+; fuente azul(1); CX: son los renglón: columna iniciales; DX: son los renglón: columna finales
+
+mov ax,0600h ;ah 06(es un recorrido), al 00(pantalla completa)
+mov bh,71h ;fondo blanco(7), sobre azul(1)
+mov cx,0000h  ;es la esquina superior izquierda renglón: columna
+mov dx,184Fh ;es la esquina inferior derecha renglón: columna      
+int 10h  ;interrupción que llama al BIOS
+
+
+; Código para desplegar un mensaje en pantalla
+;La función 09h despliegue una cadena en el área de datos, 
+;utiliza lea para cargar la dirección de cadena en DX; la operación despliega los caracteres de izquierda a derecha.
+
+e 200 “Hello World $”
+a 100
+mov dx,0200;
+mov ah,09 ;
+int 21h;
+
+
+;Código para posicionar el cursor en cualquier parte de la pantalla
+;La función 02h indica la operación que coloca al cursor, se carga el numero de pagina o pantalla, 
+;y la fila y columna en que se colocará.
+
+mov ah, 02h ; petición para colocar el cursor        mov bh,00 ; numero de pagina
+mov dh, 05 ;fila 05
+mov dl, 12 ;columna 12
+int 10h ;interrupción que llama al BIOS
+
+;Instrucciones de pila
+;La función push realiza la operación de empilar en el registro ax, es decir: guarda datos temporalmente; también bx, cx, dx
+La función pop su operación es desempilar es decir manda a llamar los datos almacenados que se encuentran en 
+; la pila en el registro guardado al igual al push solo ocupa los registros: ax, bx, cx, dx
+
+push ax;empilar
+;-----------------------------------
+pop ax ;desempilar
+
+
+;Obtener  fecha del sistema
+;La función 2ah es utilizada para obtener la fecha actual del sistema se muestra en los siguientes registros AL: día(donde 0=domingo); 
+;CX: año(en formato hextadecimal); DH: Mes(01 a 12); DL; dia del mes(01 a 31)
+
+mov ah, 2ah
+int 21h
+
+
+;obtener  hora del sistema
+:La función 2ch es utilizada para obtener la hora del sistema actual se guarda en los registros siguientes: 
+;en CH: hora; CL: minutos; DH: segundos; CL: milisegundos(máximo 99)
+
+mov ah, 2ch
+int 21h
+
+
+;Código para leer carácter con eco
+;La función 01h indica la operación para leer un carácter desde el teclado, 
+;carácter con eco quiere decir: que cuando pulsas un carácter se imprime en la pantalla enseguida
+mov ah,01h ;petición de leer carácter
+int 21h ;llama al DOS
+
+
+;Código para leer carácter sin eco
+;La función 07h o también 08h ambas indica la operación para leer un carácter desde el teclado, 
+;carácter sin eco quiere decir: que cuando pulsas un carácter no es impreso el carácter pulsado 
+;hasta que se manda imprimir con otra función.
+
+mov ah,07h;petición de leer carácter
+int 21h ;llama al DOS
+
+;Código para desplegar un solo carácter
+;La función 0eh utiliza al monitor como terminal para despliegue simple, 
+;establece la función 0eh en ah, el carácter para desplegar, esta función es utilizada para imprimir 
+;el carácter sin eco de las funciones 07h y 08h que son funciones de control de retroceso:
+
+mov ah,0eh ;petición para desplegar
+int 10h ;llama al BIOS
