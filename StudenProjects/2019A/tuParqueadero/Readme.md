@@ -2,6 +2,8 @@
 
 The system TuParqueadero consists of the installation of an intelligent parking with capacity for 50 vehicles that will inform in advance the availability of free places to park via a free web platform called ThingSpeak. This purpose will be achieved through a network of ultrasound sensors that will detect the presence of the vehicle at the entrance of the parking area, whose data will be received by an Arduino uno, which with the help of RaspBerry Pi3 will be responsible for processing the information and send it to the cloud, internet, where users can find out about available spaces through the aforementioned route. In this way it is possible for drivers to spend the least amount of time possible while waiting for a parking place.
 
+ * [YouTube video](https://www.youtube.com/watch?v=vQ7cdZmJis8&feature=youtu.be).
+
 ## Hardware Requirements:
 For the implementation of our system is necessary to have a Raspberry pi 3, arduino uno, 16x2 lcd screen and HC-SR04 sensors, after this follow the next steps
 
@@ -49,13 +51,12 @@ Ctrl T # Open another terminal
 python Load.py
 ```
 
-Finally we can see the data that is being uploaded to Thing Speak through the asigned link:
+Finally we can see the data that is being uploaded to Thing Speak through the assigned link:
 
 https://thingspeak.com/channels/781069 - Website
 ***
 ### Authors:
-**Universidad de Ibagué**
-**Programa de Electrónica**
+**Universidad de Ibagué** - **Programa de Electrónica**
 **Asignatura: Electrónica Digital III 2019A**
 
  * Julian Felipe Montaña Aguilar
