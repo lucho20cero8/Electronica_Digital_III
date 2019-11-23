@@ -1,0 +1,73 @@
+#modulo {
+  border-top: 1px solid #fff;
+  margin: 0;
+  background-image: url('/static/fotos/47095676021_647f50cfe6_o.jpg');
+  background-size: cover;
+}
+
+#cuerpo {
+  margin: 10;
+  background: hsla(105, 1%, 1%, 0.5);
+}
+
+#titulo{
+  font-family: "Merienda One";
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+  color: #fff;
+  text-align: center;
+}
+
+
+#texto1 {
+  font-family: "Merienda One";
+  font-size: 25px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+  
+  color: #fff;
+  text-align: center;
+}
+
+#texto3 {
+  background: hsla(105, 1%, 40%, 0.5);
+
+  border: 2px solid hsla(105, 1%, 20%, 0.5);
+
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  color: #fff;
+}
+
+#ESPA {
+  background: hsla(105, 1%, 40%, 0.5);
+
+  border: 2px solid hsla(105, 1%, 20%, 0.5);
+
+  font-family: "Merienda One";
+  font-size: 25px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+  color: #fff;
+  text-align: center;
+}
+#volver{
+  font-family: "Merienda One";
+  font-size: 25px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+  color: #000;
+  text-align: center;
+  background:#fff;
+}

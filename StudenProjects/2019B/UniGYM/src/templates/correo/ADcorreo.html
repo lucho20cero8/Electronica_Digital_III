@@ -1,0 +1,48 @@
+{% extends  "AD/BDNadministrador.html" %}
+
+
+{% block content %}
+
+<!-- llamar colores -->
+<link rel="stylesheet" href="/static/css/COopciones.css">
+<!-- fondo-->
+<div id="modulo">
+  <!-- centrar 1-->
+  <div class="container p-4">
+    <!-- centrar 2-->
+    <div class="container p-4">
+      <div class="container p-4">
+        <div class="container p-4">
+          <div class="container p-4">
+            <!-- texto-->
+            <div class="container p-4" id="cuerpo">
+
+              <form action="/CODcorreo" method="get">
+
+                <div class="containe p-4" style="width: 900px; height: 80px;">
+                  <h1 class="display-4" id="titulo">Correos masivos</h1>
+                </div>
+
+                <!-- texto <p id="texto1">Destinatario :<input type="text" name="destinatario" size="40" id="ESPA" style="width: 550px; height: 50px;"></p>-->
+
+                <p id="texto1">Asunto :<input type="text" name="asunto" size="40" id="ESPA" style="width: 550px; height: 50px;"></p>
+
+                <p id="texto1">Mensaje</p>
+                <p><textarea name="mensajee" rows="4" cols="70" id="texto3"></textarea></p>
+
+                <p id="texto1">
+                  <input type="submit" value="Enviar" style="width: 100px; height: 50px;">
+                  <input type="reset" value="Borrar" style="width: 100px; height: 50px;">
+                </p>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

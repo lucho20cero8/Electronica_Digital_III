@@ -1,0 +1,46 @@
+{%extends "fijos.html"%}
+{% block content %}
+<div class="container p-4">
+	<p id="textom">Indique los valores mínimos y máximos requeridos para el cuidado del cultivo:</p>
+	<form action="/limites" method="get">
+		<div class="row content-md-center">
+			<div class="col-6">
+				<hr>
+				</hr>
+				<legend id="textom"><strong>Intensidad de Luz</strong></legend>
+				<p id="textop"><strong>Valor entero mínimo: </strong><input type="number" name="lmin" min="0"
+						max"100000" step="any"> lux
+					(ej.:5000)
+				</p>
+				<p id="textop"><strong>Valor entero máximo: </strong><input type="number" name="lmax" min="0"
+						max"100000" step="any"> lux
+					(ej.:38000)
+				</p>
+				<hr>
+				</hr>
+			</div>
+			<div class="col-6">
+				<hr>
+				</hr>
+				<legend id="textom"><strong>Humedad</strong></legend>
+				<p id="textop"><strong>Porcentaje decimal mínimo: </strong><input type="number" name="hmin" min="0"
+						max"100" step="0.01">% (ej.:30,5)
+				</p>
+				<p id="textop"><strong>Porcentaje decimal máximo: </strong><input type="number" name="hmax" min="0"
+						max"100" step="0.01">%
+					(ej.:85,15)
+				</p>
+				<hr>
+				</hr>
+			</div>
+		</div>
+		<p id="subir"><input type="submit" name="hsubir" value="Subir">
+			<p id="textop"><strong>Intensidad de Luz Minima: </strong>{{lMin}} lux</p>
+			<p id="textop"><strong>Intensidad de Luz Maxima: </strong>{{lMax}} lux</p>
+			<p id="textop"><strong>Porcentaje de Humedad Minima: </strong>{{hMin}}%</p>
+			<p id="textop"><strong>Porcentaje de Humedad Maxima: </strong>{{hMax}}%</p>
+	</form>
+</div>
+<hr>
+</hr>
+{% endblock %}

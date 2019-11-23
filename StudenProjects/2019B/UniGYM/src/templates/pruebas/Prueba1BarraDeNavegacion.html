@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--  -->
+
+<head>
+  <!-- titulo de pagina -->
+  <title>Grafica Semana</title>
+  <!-- icono  -->
+  <link rel="icon" href="/static/fotos/logoGYM.jpg">
+  <!-- plantilla de internet bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- para llamar un codigo css(diseño) -->
+  <link rel="stylesheet" href="/static/css/Prueba1Decoracion.css">
+</head>
+
+<!--texto de pagina -->
+
+<body>
+  <!-- barra de navegacion bootstrap  -->
+  <nav class=" navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #088b42;">
+    <!-- nombre principal de la barra de navegacion  -->
+    <a class="navbar-brand" href="/">INNOVA TU GYM</a>
+    <!-- boton principal de la barra de navegacion -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- parte secundaria de la barra de navegacion -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <!-- boton 1 de la barra de navegacion -->
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <!-- boton 2 de la barra de navegacion -->
+        <li class="nav-item">
+          <a class="nav-link" href="/Grafica">Grafica</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Administrador">Login</a>
+        </li>
+    </div>
+  </nav>
+  <!-- bloque de contenido de texto  -->
+  {% block content %}
+  {% endblock %}
+
+</body>
+
+</html>

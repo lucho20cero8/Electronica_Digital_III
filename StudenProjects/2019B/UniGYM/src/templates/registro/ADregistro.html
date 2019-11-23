@@ -1,0 +1,48 @@
+{% extends  "AD/BDNadministrador.html" %}
+
+{% block content %}
+<!-- llamar colores -->
+<link rel="stylesheet" href="/static/css/colorLOG.css">
+<!-- fondo-->
+<div id="modulo">
+  <!-- centrar 1-->
+  <div class="container p-4">
+    <!-- centrar 2-->
+    <div class="container p-4">
+      <div class="container p-4">
+        <div class="container p-4">
+          <div class="container p-4">
+            <!-- texto-->
+            <div class="container p-4" id="cuerpo">
+
+              <form action="/CODregistro" method="get">
+
+                <div class="containe p-4" style="width: 900px; height: 80px;">
+                  <h1 class="display-4" id="titulo">Registro</h1>
+                </div>
+
+                <p id="texto1">Codigo:<input type="text" name="codigo" size="40" id="ESPA" style="width: 250px; height: 50px;"></p>
+                <p id="texto1">Nombre:<input type="text" name="nombre" size="40" id="ESPA" style="width: 350px; height: 50px;"></p>
+                <p id="texto1">Cedula:<input type="text" name="cedula" size="40" id="ESPA" style="width: 250px; height: 50px;"></p>
+                <p id="texto1">EPS:<input type="text" name="EPS" size="40" id="ESPA" style="width: 250px; height: 50px;"></p>
+                <p id="texto1">Nª de emergencia:<input type="text" name="Nemergencia" size="40" id="ESPA" style="width: 250px; height: 50px;"></p>
+                <p id="texto1">RH:<input type="text" name="RH" size="40" id="ESPA" style="width: 250px; height: 50px;"></p>
+                <p id="texto1">Carrera:<input type="text" name="carrera" size="50" id="ESPA" style="width: 280px; height: 50px;"></p>
+                <p id="texto1">Correo: <input type="text" name="correo" size="40" id="ESPA" style="width: 250px; height: 50px;"></p>
+
+                <p id="texto1">
+                  <input type="submit" value="Enviar" style="width: 100px; height: 50px;">
+                  <input type="reset" value="Borrar" style="width: 100px; height: 50px;">
+                </p>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

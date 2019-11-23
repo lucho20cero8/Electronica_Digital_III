@@ -1,0 +1,44 @@
+#bnavegacion
+{
+background: #2A6915;
+border-bottom: 4px solid #FFF;
+}
+
+#bprincipal
+{
+float: left;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+}
+
+#ftitulo
+{
+color: #FFF;
+font-size: 75px;
+font-style: normal;
+font-variant: normal;
+font-weight: 700;
+line-height: 15.4px;
+text-align: center;
+text-shadow: #000 10px 5px 0px;
+}
+
+#textom
+{
+color: #000;
+font-size: 25px;
+text-align: center;
+}
+
+#textop
+{
+color: #000;
+font-size: 20px;
+text-align: center;
+}
+
+#subir
+{
+text-align: center;
+}

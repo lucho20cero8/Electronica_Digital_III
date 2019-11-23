@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--  -->
+
+<head>
+  <!-- titulo de pagina -->
+  <title>UNI GYM</title>
+  <!-- icono  -->
+  <link rel="icon" href="/static/fotos/logoGYM.jpg">
+  <!-- plantilla de internet bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- para llamar un codigo css(diseño) -->
+  <link rel="stylesheet" href="/static/ColoresUsuario/CoBDNusuario.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Permanent+Marker" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merienda+One" />
+</head>
+
+<!--texto de pagina -->
+
+<body>
+  <!-- barra de navegacion bootstrap  -->
+  <nav class=" navbar sticky-top navbar-expand-lg navbar-light " id="BarraDeNavegacion">
+    <!--parte 1 -->
+    <div class="collapse navbar-collapse  col-md-auto" id="navbarSupportedContent">
+      <ul class="navbar-nav justify-content-md-center">
+        <!-- boton 1 de la barra de navegacion -->
+        <a class="nav-link" href="/" id="BPrincipal">
+          <img src="/static/fotos/logo_unibague.png" width="250" height="80" alt="">
+        </a>
+        <!-- boton principal de la barra de navegacion -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+
+    <!--parte ico -->
+    <div class="collapse navbar-collapse col" id="navbarSupportedContent">
+      <ul class="navbar-nav content-md-left">
+        <!-- boton 1 de la barra de navegacion -->
+        <li class="nav-item active">
+          <a class="nav-link" href="https://es-la.facebook.com/SoyUnibague/" id="BPiconos">
+            <img src="/static/fotos/facebook.png" width="30" height="30" alt="">
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://twitter.com/unibagueoficial" id="BPiconos">
+            <img src="/static/fotos/gorjeo.png" width="30" height="30" alt="">
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href=" https://www.instagram.com/soyunibague/?hl=es-la" id="BPiconos">
+            <img src="/static/fotos/instagram.png" width="30" height="30" alt="">
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://www.youtube.com/user/universidadeibague" id="BPiconos">
+            <img src="/static/fotos/logotipo-de-youtube.png" width="30" height="30" alt="">
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSf3uFCrnexIgQqledPF_D-2E9H9zRjHUUc_yJNvznEAVo6m-g/viewform" id="BPiconos">
+            <img src="/static/fotos/sobre.png" width="30" height="30" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!--parte 2 -->
+    <div class="collapse navbar-collapse  col-lg-6 " id="navbarSupportedContent">
+      <ul class="navbar-nav justify-content-md-center">
+        <span class="navbar-text">
+          <h1 class="display-4" id="TUniGym">UNI GYM</h1>
+        </span>
+    </div>
+    <!--parte 3 -->
+    <div class="collapse navbar-collapse col-md-auto" id="navbarSupportedContent">
+
+      <ul class="navbar-nav ml-auto">
+        <!-- boton 1 de la barra de navegacion -->
+        <li class="nav-item active">
+          <a class="nav-link" href="/LOG" id="Blogin">
+            <img src="/static/fotos/administrador.png" width="30" height="30" alt="">
+          </a>
+        </li>
+        <!-- boton 2 de la barra de navegacion -->
+        <li class="dropdown" id="icono ">
+          <a href="javascript:void(0)" class="dropbtn">
+            <img src="/static/fotos/menu.png" width="40" height="40" alt="">
+          </a> <!-- lista de botones -->
+          <div class="dropdown-content" id="LTDbotones">
+            <a class="nav-link" href="/" id="botones">inicio</a>
+            <a class="nav-link" href="/SDusuario" id="botones">sedes</a>
+            <a class="nav-link" href="/HOusuario" id="botones">Horarios</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  {% block content %}
+
+  {% endblock %}
+</body>
+
+
+</html>

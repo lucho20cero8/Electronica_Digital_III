@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block body %}
+  <div class="row">
+    <div class="col-md-7 offset-md-3">
+      <table class="table table-striped table-hover table-bordered table-sm bg-white">
+        <thead>
+          <tr>
+           <td>ID</td>
+           <td>cedula </td>
+           <td>nombre</td>
+           <td>telefono</td>
+           <td>saldo</td>
+           <td>opciones</td>
+          </tr>
+        </thead>
+        <tbody>
+          {%for usuario in usuarios%}
+          <tr>
+            <td>{{usuario.0}}</td>
+            <td>{{usuario.1}}</td>
+            <td>{{usuario.2}}</td>
+            <td>{{usuario.3}}</td>
+            <td>{{usuario.4}}</td>
+            <td>
+              <a href="/Recargar/{{usuario.0}}"class= "btn btn-success ">Actualizar</a>
+              <a href="/editar_saldo/{{usuario.0}}"class= "btn btn-success ">Recargar</a>
+            </td>
+          </tr>
+          {%endfor%}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}

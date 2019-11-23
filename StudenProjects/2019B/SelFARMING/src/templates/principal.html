@@ -1,0 +1,17 @@
+{%extends "fijos.html"%}
+{% block content %}
+<div class="container p-4">
+    <p id="textom">Bienvenido a SelFARMING, un sistema que realiza el cuidado automatico de tus
+        plantas.</p>
+    <form action="/correo" method="get">
+        <hr>
+        </hr>
+        <p id="textom">Por favor ingrese un correo para enviar las notificaciones del estado del cultivo.</p>
+        <p id="textop"><strong>Correo: </strong><input type="text" name="correo"></p>
+        <p id="subir"><input type="submit" name="subir" value="Subir">
+            <p id="textop"><strong>Correo Registrado: </strong>{{email}}</p>
+            <hr>
+            </hr>
+    </form>
+</div>
+{% endblock %}

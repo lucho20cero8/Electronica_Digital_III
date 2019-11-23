@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<style>
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  /* div {
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 25px;
+  } */
+</style>
+{% if lab_cerrar == "abierto" %}
+  <div class="container" style="justify-content: center; align-items: center;">
+   <img src="../static/imagenes/lab2.jpg" style="width:100%;"> <!--style="width:400px;height:400px"!-->
+  </div>
+  <h2 class="text-center p-4 my-1" style="color:#fff;">Registro de estudiante</h2>
+  <div class="wrapper fadeInDown">
+    <div class="container p-4">
+      <div class="jumbotron">
+        <form method="POST">  <!--action="/action_page.php target=_self"-->
+
+          <label for="dnom" data-toggle="tooltip" data-placement="right">Nombre:</label>
+          <input type="text" id="dnom" name="dnom" placeholder="Nombre..." required>
+
+          <label for="dced" data-toggle="tooltip" data-placement="right">Cedula o documento de identidad:</label>
+          <input type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="dced" name="dced" placeholder="Cedula o documento de identidad..." title="La cedula solo contienen caracteres numericos" required>
+
+          <label for="dcel" data-toggle="tooltip" data-placement="right">Telefono celular:</label>
+          <input type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="dcel" name="dcel" placeholder="Telefono celular..." title="Los telefonos solo contienen caracteres numericos" required>
+
+          <label for="deps" data-toggle="tooltip" data-placement="right">EPS:</label>
+          <input type="text" id="deps" name="deps" placeholder="EPS..." required>
+
+          <label for="dcod" data-toggle="tooltip" data-placement="right">Codigo estudiantil:</label>
+          <input type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="dcod" name="dcod" placeholder="Codigo estudiantil..." title="Los codigos de estudiantes solo contienen caracteres numericos" required>
+
+          <label for="dcorreo">Correo electronico del estudiante:</label>
+          <input type="email" class="form-control" id="dcorreo" name="dcorreo" placeholder="Correo electronico del estudiante..." required>
+
+          <label for="dequipo" data-toggle="tooltip" data-placement="right" title="ejemplo">Equipo a solicitar:</label>
+          <input type="text" id="dequipo" name="dequipo" placeholder="Equipo a solicitar..." required>
+
+          <input type="submit" value="Guardar">
+        </form>
+        <h3 class="text-center p-4 my-1">{{info}}</h3>
+        <script>
+          $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+          });
+        </script>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Prestamos actuales</h2>
+        <p>La siguiente tabla muestra la informacion de los equipos prestados actualmente:</p>
+
+        {{ tabla_estu_lab2 }}
+
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% if lab_cerrar == "cerrado" %}
+  <div class="container p-2">
+    <div style="background-color:#e57373; color:black; padding:20px;">
+      <h4>{{ info }}</h4>
+      <h4>Tenga en cuenta los siguientes puntos:</h4>
+      <p>-Hora de registro 6:00 am - 11:00 am <br>
+        -La primera persona de la lista es el encargado del laboratorio, quien le llegara al correo el formato correspondiente para imprimir. <br>
+        -El laboratorio unicamente sera prestado si se llena el cupo total del mismo, de lo contrario se eliminaran las personas que llenaron el formato y tendran que llenarlo de nuevo el dia siguiente.<br>
+        -Los registros se borran despues de las 11:00, si no se registro antes tiene que intentarlo el dia siguiente. </p>
+    </div>
+  </div>
+{% endif %}
+{% endblock content %}

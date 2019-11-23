@@ -1,0 +1,40 @@
+Datos de la fecha	2019-11-19 
+temperatura = 29 °C	 precion = 88 KPa	 humedad = 85 %	 lluvia = 1	contaminacion = 372	fecha = 2019	11	19 	16:03:20
+Datos de la fecha	2019-11-19 
+temperatura = 28 °C	 precion = 88 KPa	 humedad = 83 %	 lluvia = 0	contaminacion = 399	fecha = 2019	11	19 	16:03:20
+Datos de la fecha	2019-11-19 
+temperatura = 28 °C	 precion = 88 KPa	 humedad = 84 %	 lluvia = 0	contaminacion = 396	fecha = 2019	11	19 	16:03:20
+Datos de la fecha	2019-11-19 
+temperatura = 28 °C	 precion = 88 KPa	 humedad = 83 %	 lluvia = 0	contaminacion = 396	fecha = 2019	11	19 	16:03:20
+Datos de la fecha	2019-11-19 
+temperatura = 28 °C	 precion = 88 KPa	 humedad = 86 %	 lluvia = 0	contaminacion = 395	fecha = 2019	11	19 	16:03:20
+Datos de la fecha	2019-11-19 
+temperatura = 28 °C	 precion = 88 KPa	 humedad = 86 %	 lluvia = 0	contaminacion = 394	fecha = 2019	11	19 	16:03:20
+Datos de la fecha	2019-11-19 
+temperatura = 27 °C	 precion = 88 KPa	 humedad = 86 %	 lluvia = 0	contaminacion = 394	fecha = 2019	11	19 	16:03:20
+Datos de la fecha	2019-11-19 
+temperatura = 28 °C	 precion = 88 KPa	 humedad = 88 %	 lluvia = 0	contaminacion = 395	fecha = 2019	11	19 	16:03:20
+Datos de la fecha	2019-11-19 
+temperatura = 27 °C	 precion = 88 KPa	 humedad = 86 %	 lluvia = 0	contaminacion = 394	fecha = 2019	11	19 	16:03:20
+Datos de la fecha	2019-11-19 
+temperatura = 27 °C	 precion = 88 KPa	 humedad = 85 %	 lluvia = 0	contaminacion = 395	fecha = 2019	11	19 	16:03:20
+Datos de la fecha	2019-11-19 
+temperatura = 27 °C	 precion = 88 KPa	 humedad = 86 %	 lluvia = 0	contaminacion = 395	fecha = 2019	11	19 	16:03:20
+Datos de la fecha	2019-11-19 
+temperatura = 27 °C	 precion = 88 KPa	 humedad = 87 %	 lluvia = 0	contaminacion = 393	fecha = 2019	11	19 	16:03:20
+Datos de la fecha	2019-11-19 
+temperatura = 27 °C	 precion = 88 KPa	 humedad = 87 %	 lluvia = 0	contaminacion = 393	fecha = 2019	11	19 	16:03:20
+Datos de la fecha	2019-11-19 
+temperatura = 27 °C	 precion = 88 KPa	 humedad = 87 %	 lluvia = 0	contaminacion = 392	fecha = 2019	11	19 	16:03:20
+Datos de la fecha	2019-11-19 
+temperatura = 27 °C	 precion = 88 KPa	 humedad = 90 %	 lluvia = 1	contaminacion = 366	fecha = 2019	11	19 	16:03:20
+Datos de la fecha	2019-11-19 
+temperatura = 27 °C	 precion = 88 KPa	 humedad = 90 %	 lluvia = 0	contaminacion = 394	fecha = 2019	11	19 	16:03:20
+Datos de la fecha	2019-11-19 
+temperatura = 27 °C	 precion = 88 KPa	 humedad = 86 %	 lluvia = 0	contaminacion = 394	fecha = 2019	11	19 	16:03:20
+Datos de la fecha	2019-11-19 
+temperatura = 27 °C	 precion = 88 KPa	 humedad = 87 %	 lluvia = 0	contaminacion = 394	fecha = 2019	11	19 	16:03:20
+Datos de la fecha	2019-11-19 
+temperatura = 27 °C	 precion = 88 KPa	 humedad = 88 %	 lluvia = 0	contaminacion = 394	fecha = 2019	11	19 	16:03:20
+Datos de la fecha	2019-11-19 
+temperatura = 27 °C	 precion = 88 KPa	 humedad = 87 %	 lluvia = 0	contaminacion = 441	fecha = 2019	11	19 	16:31:16

@@ -1,0 +1,148 @@
+/*  barra de navegacion*/
+#BarraDeNavegacion {
+  background: #2e312d;
+  border-bottom: 4px solid #fff
+}
+
+/* botones de la barra de navegacion*/
+#BPrincipal {
+  float: left;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 1px 1px;
+}
+
+#BPiconos {
+  float: left;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 2px 4px;
+}
+
+/* botones de la barra de navegacion
+#BPrincipal:hover {
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+*/
+#TUniGym {
+  color: #fff;
+  font-family: "Permanent Marker";
+  font-size: 75px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+}
+
+#Blogin {
+  float: left;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  bottom: 5;
+  right: 0;
+}
+
+/*
+#Blogin:hover {
+  background: #000;
+  color: #fff;
+  text-align: center;
+}*/
+/* BDesplege */
+#icono {
+  float: left;
+}
+
+#icono.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2e312d;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* mirar*/
+#BDesplege {
+  background: #2e312d;
+}
+
+/* botones lista de botones */
+#LTDbotones {
+  display: ;
+  position: absolute;
+}
+
+/* botones */
+#botones, .dropbtn {
+  display: inline-block;
+  color: #;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+}
+
+.dropdown-content #botones {
+  font-family: "Merienda One";
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+  color: #fff;
+  padding: 5px 4px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border: 3px solid #000;
+}
+
+.dropdown-content #botones :hover {
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#botones:hover, .dropdown:hover .dropbtn {
+  font-family: "Merienda One";
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+  color: #000;
+  background: #ADA996;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+  border: 2px solid #000;
+}
+
+/* cambiar el color del texto en la pagina*/
+body {
+  margin: 10;
+  background: #ADA996;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* traer foto
+  background-image: url("/static/fotos/logoGYM.jpg");
+  background-size: cover;
+  background-position:center;
+  padding:15px;
+  background-attachment: fixed; */
+}

@@ -1,0 +1,42 @@
+
+#modulo {
+  border-top: 1px solid #fff;
+  margin: 0;
+  background-image: url('/static/fotos/3rd-July-19.jpg');
+  background-size: cover;
+}
+#cuerpo {
+  margin: 10;
+  background: hsla(105, 1%, 50%, 0.5);
+}
+#texto1 {
+  font-family: "Merienda One";
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+  color: #fff;
+  text-align: center;
+}
+#texto2 {
+  font-family: "Merienda One";
+  font-size: 25px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+  color: #fff;
+  text-align: center;
+}
+
+#texto3 {
+  font-family: "Merienda One";
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+  color: #fff;
+  text-align: center;
+}

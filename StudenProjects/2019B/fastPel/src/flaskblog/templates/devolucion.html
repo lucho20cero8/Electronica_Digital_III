@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!-- <h1 class="text-center p-1 my-1"> DEVOLUCIONES <h1> -->
+
+<style>
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  /* div {
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 25px;
+  } */
+</style>
+{% if current_user.username == "Administrador" %}
+  <h2 class="text-center p-4 my-1" style="color:#fff;"> DEVOLUCIONES </h2>
+
+  <div class="container p-4">
+    <div class="jumbotron">
+      <form method="POST">  <!--action="/action_page.php target=_self"-->
+
+        <label for="idqui">Codigo del equipo a devolver:</label>
+        <input type="text" id="idqui" name="ceqdeb" placeholder="Codigo del equipo..." required>
+
+        <label for="idbser" data-toggle="tooltip" data-placement="right" title="La observacion no puede contener los caracteres 'Ñ, ñ'">Observacion de la entrega:  (No puedes utilizar los caracteres 'Ñ, ñ')</label>  <!-- pattern="[^'\xd1]+ !-->
+        <input type="text" pattern="[^'\xf1]+[^'\xd1]+" id="idbser" name="obser" placeholder="Observacion..." title="No puedes utilizar los caracteres 'Ñ, ñ'"required>
+
+        <input type="submit" value="Guardar">
+      </form>
+      <h3 class="text-center p-4 my-1">{{info}}</h3>
+      <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+        });
+      </script>
+    </div>
+  </div>
+{% endif %}
+
+{% if current_user.username == "Monitores" %}
+  <h2 class="text-center p-4 my-1" style="color:#fff;"> DEVOLUCIONES </h2>
+
+  <div class="container p-4">
+    <div class="jumbotron">
+      <form method="POST">  <!--action="/action_page.php target=_self"-->
+
+        <label for="idqui">Codigo del equipo a devolver:</label>
+        <input type="text" id="idqui" name="ceqdeb" placeholder="Codigo del equipo..." required>
+
+        <label for="idbser" data-toggle="tooltip" data-placement="right" title="La observacion no puede contener los caracteres 'Ñ, ñ'">Observacion de la entrega:  (No puedes utilizar los caracteres 'Ñ, ñ')</label>  <!-- pattern="[^'\xd1]+ !-->
+        <input type="text" pattern="[^'\xf1]+[^'\xd1]+" id="idbser" name="obser" placeholder="Observacion..." title="No puedes utilizar los caracteres 'Ñ, ñ'"required>
+
+        <input type="submit" value="Guardar">
+      </form>
+      <h3 class="text-center p-4 my-1">{{info}}</h3>
+      <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+        });
+      </script>
+    </div>
+  </div>
+{% endif %}
+<!-- <img src="../static/imagenes/images.jpeg"> !-->
+
+{% endblock content %}

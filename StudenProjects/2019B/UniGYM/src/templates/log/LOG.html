@@ -1,0 +1,44 @@
+{% extends  "usuario/BDNusuario.html" %}
+
+
+{% block content %}
+<!-- llamar colores -->
+<link rel="stylesheet" href="/static/css/colorLOG.css">
+<!-- fondo-->
+<div id="modulo">
+  <!-- centrar 1-->
+  <div class="container p-4">
+    <!-- centrar 2-->
+    <div class="container p-4">
+      <div class="container p-4">
+        <div class="container p-4">
+          <div class="container p-4">
+            <!-- texto-->
+            <div class="container p-4" id="cuerpo">
+
+              <form action="/CODLOG" method="get">
+
+                <div class="containe p-4" style="width: 900px; height: 80px;">
+                  <h1 class="display-4" id="titulo">Ingreso</h1>
+                </div>
+
+                <p id="texto1">Usuario:<input type="text" name="userr" size="40" id="ESPA" style="width: 250px; height: 50px;"></p>
+
+                <p id="texto1">Contraseña:<input type="text" name="contrasenaa" size="40" id="ESPA" style="width: 250px; height: 50px;"></p>
+
+                <p id="texto1">
+                  <input type="submit" value="Enviar" style="width: 100px; height: 50px;">
+                  <input type="reset" value="Borrar" style="width: 100px; height: 50px;">
+                </p>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,55 @@
+#modulo {
+  border-top: 1px solid #fff;
+  margin: 0;
+  background-image: url('/static/fotos/pareja.jpg');
+  background-size: cover;
+}
+
+/* encabesado 1*/
+#encabesado1 {
+  color: #000;
+  padding: 50px 50px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* bloques de encabesado 1*/
+#EB1 {
+  /* hsla ( color, saturación , luminosidad, alfa )*/
+  background: hsla(105, 1%, 30%, 0.5);
+  text-align: center;
+  color: #000;
+  border: 2px solid #000;
+}
+
+#EB2 {
+  background: hsla(105, 1%, 30%, 0.5);
+  text-align: center;
+  color: #000;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+#texto1 {
+  font-family: "Merienda One";
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+  color: #fff;
+  text-align: center;
+}
+
+#texto2 {
+  font-family: "Merienda One";
+  font-size: 25px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+  color: #fff;
+  text-align: center;
+}

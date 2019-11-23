@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<meta charset="utf-8">
+
+  <title> Acuapy</title>
+  <link rel="shortcut icon" href="./static/img/acuario.ico">
+<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+<link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+</head>
+<body background="./static/img/payasa.gif ">
+                            <!-- uno-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" charset="utf-8" ></script>
+                            <!-- DOS-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" charset="utf-8" ></script>
+<div class="row main-container middle-xs center-xs">
+  <div class="col-md-8 col-sm-10 col-xs-11 col-lg-7">
+  <div class="box">
+<div class="card animated slideInUp">
+  <header class="main-header">
+    <a class='myButton myButton:active myButton:hover btn btn-primary' href="/alimentar">VOLVER</a>
+  </header>
+        <article class="body">
+        <header class="text-center">
+          <img src="./static/img/dory.jpeg" height="200px">
+      <h1 class="color-text pacifico tittle tresd animated shake delay-4" > Valores</h1>
+        </header>
+	<script>
+	function fetch()
+	{
+	var get=document.getElementById("get").value;
+	document.getElementById("put").value=get;
+	}
+	
+	 function fetch2()
+        {
+        var get2=document.getElementById("get2").value;
+        document.getElementById("put2").value=get2;
+        }
+
+
+
+
+
+
+	</script>
+       <form action="/valores2" method="post">
+    <label for="nombreUser">valor maximo</label>
+    <input type="range" name="valormaximo" min="0" max="50" id="get" onchange="fetch()" ><br/>
+	<input type="text" id="put" />	 
+    <label for="contraseña">valor minimo</label>
+    <input type="range" name="valorminimo" min="0" max="50" id="get2" onchange="fetch2()" ><br/>
+<input type="text" id="put2"  />
+
+ 
+    <input type="submit" value="Enviar" />
+    
+    
+</form>
+<div class="final">
+ <a class='myButton myButton:active myButton:hover btn btn-primary' href="/calentador">Activar calentador</a>
+      </article>
+      
+      </div>
+</div>
+  </div>
+  </div>
+</div>
+</body>
+
+
+
+
+
+
+</html>
+

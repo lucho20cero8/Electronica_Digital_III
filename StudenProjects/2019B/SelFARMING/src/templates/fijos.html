@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>SelFARMING</title>
+  <link rel="shortcut icon" href="../static/imgs/selfarming.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/tema.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Permanent+Marker" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merienda+One" />
+</head>
+
+<body>
+  <nav class=" navbar sticky-top navbar-expand-lg navbar-light " id="bnavegacion">
+    <div class="navbar-collapse col-md-auto">
+      <ul class="navbar-nav ml-auto">
+        <a class="nav-link" href="/" id="bprincipal">
+          <img src="../static/imgs/Isotipo SelFARMING.png" width="115" height="115">
+        </a>
+        <span class="navbar-text">
+          <p><h1 class="display-4" id="ftitulo">SelFARMING</h1></p>
+        </span>
+	<p> </p>
+        <ul class="nav-item">
+	<a class="nav-link" id="textom" href="/modo/manual"><p><strong>CONTROL MANUAL</strong></p></a>
+        </ul>
+        <ul class="nav-item">
+          <a class="nav-link" id="textom" href="/modo/automatico"><p><strong>CONTROL AUTOMATICO</strong></p></a>
+        </ul>
+      </ul>
+    </div>
+  </nav>
+  {% block content %}
+  {% endblock %}
+  <p id="textom">Información en tiempo real del cultivo vía <a target="_blank"
+      href="https://thingspeak.com/channels/895186">ThingSpeak</a></p>
+</body>
+
+</html>

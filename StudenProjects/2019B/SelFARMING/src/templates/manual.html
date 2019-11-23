@@ -1,0 +1,25 @@
+{%extends "fijos.html"%}
+{% block content %}
+<div class="container p-4">
+	<p id="textom"> Bienvenido al panel de control manual del sistema de cuidado del cultivo, aquí podrá
+		manipular libremente el estado del sistema de riego y de la cubierta.</p>
+	<div class="row content-md-center">
+		<div class="col-6">
+			<hr>
+			<p id="textom"><strong>Sistema de riego</strong></p>
+			<p id="textop"><a href="/activacion/Activado"><strong>ACTIVAR</strong> sistema de riego</a></p>
+			<p id="textop"><a href="/activacion/Desactivado"><strong>DESACTIVAR</strong> sistema de riego</a></p>
+			<p id="textop"><strong>ESTADO: </strong>{{estRiego}}</p>
+			<hr>
+		</div>
+		<div class="col-6">
+			<hr>
+			<p id="textom"><strong>Cubierta</strong></p>
+			<p id="textop"><a href="/activacion/Desplegada"><strong>DESPLEGAR</strong> cubierta</a></p>
+			<p id="textop"><a href="/activacion/Plegada"><strong>PLEGAR</strong> cubierta</a></p>
+			<p id="textop"><strong>ESTADO: </strong>{{estCubierta}}</p>
+			<hr>
+		</div>
+	</div>
+</div>
+{% endblock %}

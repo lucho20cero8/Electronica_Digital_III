@@ -1,0 +1,116 @@
+.body{
+  padding: 60px 15px;
+}
+.nav a{
+  width: 33%;
+  display:inline-block;
+
+}
+.tittle{
+  font-size: 2.5em;
+  margin-top: 0;
+}
+.pacifico{
+  font-family: 'Caveat',cursive;
+}
+.main-header{
+     background-color:#34495E;
+     padding-left: 15px;
+     padding-top: 10px;
+     padding-right: 15px;
+     padding-bottom: 10px;
+     border-radius: 4px;
+  }
+.main-nav{
+color:white;
+margin-right: -4px;
+text-decoration:none;
+}
+.text-center{
+text-align:center;
+}
+.color-text{
+  color:black;
+
+}
+.main-container{
+  min-height: 100vh;
+}
+.product img{
+  width: 100px;
+}
+.product h3{
+  font-size: 1.7em;
+  margin-top: 5px;
+}
+.card{
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.tresd{
+  text-shadow: 1px 3px 0px #6b251d, 1px 13px 5px rgb(171, 168, 168);
+}
+.interactuadores{
+  font-family: 'Special Elite',cursive;
+}
+.delay-1{
+  animation-delay: 0.1s
+}
+.delay-2{
+  animation-delay: 0.2s
+}
+.delay-3{
+  animation-delay: 0.3s
+}
+.delay-4{
+  animation-delay: 0.4s
+}
+.delay-5{
+  animation-delay: 0.5s
+}
+.delay-8{
+  animation-delay: 0.8s
+}
+.calentadorthings{
+    margin-top:15px;
+    
+    }
+.myButton {
+    margin-bottom:15px;
+    box-shadow: 0px 1px 0px 0px #276873;
+    background:linear-gradient(to bottom, #39a5cc 5%, #105961 100%);
+    background-color:#39a5cc;
+    border-radius:15px;
+    border:2px solid #93c2e6;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:13px;
+    font-weight:bold;
+    padding:12px 16px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #000000;
+}
+.myButton:hover {
+    background:linear-gradient(to bottom, #105961 5%, #39a5cc 100%);
+    background-color:#105961;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+.marco{
+    font-family: 'Indie Flower', cursive;
+    }
+.valores{
+    
+   
+
+    }
+.final{
+margin-top:15px;    
+    }
+
+
